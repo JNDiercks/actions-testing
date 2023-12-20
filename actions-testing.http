@@ -1,0 +1,11 @@
+@actions_testing_HostAddress = http://localhost:5279
+
+GET {{actions_testing_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{actions_testing_HostAddress}}/todos/1
+Accept: application/json
+
+###
