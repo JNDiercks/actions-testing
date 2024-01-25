@@ -23,7 +23,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build -a osx-arm64 --no-restore
     - name: Testing
       run: cd bin && ls
     - name: Upload dotnet test results
